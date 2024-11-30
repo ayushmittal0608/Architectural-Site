@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background: #000;
+        }
+        
+        .container {
+            width: 1280px;
+            margin: auto;
+            z-index: 1;
+        }
+        
+        .main-head {
+            width: 100%;
+            height: 80px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            z-index: 9999;
+            padding-top: 10px;
+        }
+
+        /* Add more styles as needed */
+
+        .showcase {
+            width: 100%;
+            height: 560px;
+            position: relative;
+            overflow: hidden; /* Prevent overflow of the video */
+        }
+
+        .video-background {
+            position: absolute; /* Position the video behind other content */
+            top: 50%;
+            left: 50%;
+            min-width: 100%; /* Ensure it fills the width */
+            min-height: 100%; /* Ensure it fills the height */
+            width: auto; /* Maintain aspect ratio */
+            height: auto; /* Maintain aspect ratio */
+            z-index: -1; /* Keep the video behind the overlay and content */
+            transform: translate(-50%, -50%); /* Center the video */
+            object-fit: cover; /* Cover the entire area without distortion */
+        }
+
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+        }
+
+        /* Other CSS styles here */
+    </style>
+</head>
+<body>
+    <header class="main-head">
+        <div class="container">
+            <div class="main-menu">
+                <div class="logo">
+                    <img src="logo.jpeg" alt="Logo">
+                </div>
+                <div class="nav-menu">
+                    <ul class="nav-list">
+                        <!-- Add navigation links here -->
+                    </ul>
+                </div>
+                <div class="toggle-btn">
+                    <button class="btn">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="showcase">
+        <video src="archi-video.mp4" width="500">
+        <div class="overlay"></div>
+    </section>
+
+    <div class="demo-text">
+        <div class="container">
+            <div class="content">
+                <h2>Slide Down Sticky Navigation Menu</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus accusantium, dolorum iure similique doloribus necessitatibus ipsa debitis mollitia? Voluptatibus pariatur saepe placeat molestiae perferendis tenetur temporibus eius, quaerat possimus totam.</p>
+            </div>
+            <div class="img">
+                <img src="logo.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-text">
+        <div class="container">
+            <div class="img">
+                <img src="logo.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h2>Slide Down Sticky Navigation Menu</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus accusantium, dolorum iure similique doloribus necessitatibus ipsa debitis mollitia? Voluptatibus pariatur saepe placeat molestiae perferendis tenetur temporibus eius, quaerat possimus totam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-text">
+        <div class="container">
+            <div class="content">
+                <h2>Slide Down Sticky Navigation Menu</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus accusantium, dolorum iure similique doloribus necessitatibus ipsa debitis mollitia? Voluptatibus pariatur saepe placeat molestiae perferendis tenetur temporibus eius, quaerat possimus totam.</p>
+            </div>
+            <div class="img">
+                <img src="logo.jpg" alt="" class="logo-img">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

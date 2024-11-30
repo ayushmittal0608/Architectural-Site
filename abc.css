@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background:#000000
+}
+.container{
+    width: 1280px;
+    margin: auto;
+    z-index: 1;
+}
+span{
+    font-family:cursive;
+    margin-bottom: 20px;
+    font-size: 22px; /* Adjust font size */
+    color: #ffd857; /* Change text color for better contrast */
+    display: inline-block; /* Ensure spans can have margins */
+    line-height: 1.2; /* Adjust line height for better readability */
+    margin-top: 50px;
+}
+.main-head{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: 1;
+    height: 100px;
+    padding-top: 10px;
+}
+.main-menu .logo img {
+    width: 75px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 60px; /* Optional: Limit the maximum height */
+    margin-top: 25px;
+}
+.main-head.slidedown{
+    position: fixed;
+    background: black; /* Darker background when slidedown */
+    height: 110px;
+    opacity: 0.6;
+    padding-top: 10px;
+    backdrop-filter: blur(10px); /* Keep the blur effect on scroll */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border remains on scroll */
+    animation: slidedown .3s forwards;
+}
+@keyframes slidedown{
+    from{
+        top: -250px;
+    }
+    to{
+        top: 0;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+.main-head .main-menu{
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.toggle-btn {
+    background-color: #333; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 15px; /* Increase padding */
+    cursor: pointer; /* Pointer on hover */
+    width: 60px; /* Increased width */
+    height: 60px; /* Increased height */
+    display: flex; /* Use flexbox to center the icon */
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center icon horizontally */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition effect */
+    z-index: 10; /* Ensure button is above other elements */
+}
+
+.toggle-btn:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+.toggle-btn i {
+    font-size: 24px; /* Increase icon size for better visibility */
+    margin: 0; /* Remove margin around the icon */
+    color: white; /* Ensure icon color is visible */
+}
+
+
+.main-head .main-menu .logo{
+    width: 30%;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center align items vertically */
+    gap: 10px;
+}
+.main-head .main-menu .nav-menu{
+    width: 70%;
+}
+.main-head .main-menu .nav-menu .nav-list{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.main-head .main-menu .nav-menu .nav-list .nav-list-item{
+    padding: 15px 30px;
+    list-style: none;
+}
+.main-head .main-menu .nav-menu .nav-list .nav-list-item .nav-link{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+    font-weight: 500;
+    transition: all .1s ease;
+}
+.main-head.slidedown .main-menu .nav-menu .nav-list .nav-list-item .nav-link {
+    color: #ffffff;
+}
+.main-head .main-menu .nav-menu .nav-list .nav-list-item .nav-link:hover{
+    color: #B53471;
+}
+.main-head.slidedown .main-menu .logo{
+    color: #ffffff;
+}
+.main-head .main-menu .toggle-btn{
+    display: none;
+}
+.showcase {
+    width: 100%;
+    height: 560px;
+    position: relative; /* Ensure the positioning context for absolute children */
+    overflow: hidden; /* Prevent overflow of the video */
+}
+
+.video-background {
+    position: absolute; /* Position the video behind other content */
+    top: 50%;
+    left: 50%;
+    display: block;
+    min-width: 100%; /* Ensure it fills the width */
+    min-height: 100%; /* Ensure it fills the height */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 0; /* Keep the video behind the overlay and content */
+    transform: translate(-50%, -50%); /* Center the video */
+    object-fit: cover; /* Cover the entire area without distortion */
+}
+
+.showcase .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+.showcase .content {
+    text-align: center;
+    padding: 0 20px; /* Adjust padding as needed */
+    color: #fff;
+}
+
+.showcase .content h2{
+    font-size: 45px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    line-height: 55px;
+    margin-bottom: 10px;
+}
+.showcase .content p{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+.showcase .content .btn{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    background: transparent;
+    color: #fff;
+    padding: 11px 18px;
+    border: 2px solid #B53471;
+    border-radius: 5px;
+    transition: all .3s linear;
+}
+.showcase .content .btn:hover{
+    background: #B53471;
+}
+.demo-text{
+    width: 100%;
+    padding: 80px 0 80px 0;
+    z-index: 1;
+    opacity: 0.1;
+}
+.demo-text .container{
+    display: flex;
+    justify-content: center;
+}
+.demo-text .container .content, .demo-text .container .img{
+    width: 50%;
+}
+.demo-text .container .img img{
+    width: 100%;
+}
+.demo-text .container .content{
+    padding: 80px 40px;
+}
+.demo-text .content h2{
+    font-size: 45px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    line-height: 55px;
+    margin-bottom: 10px;
+}
+
+.demo-text .content p{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around; /* Spacing between each section */
+    align-items: flex-start; /* Align items to the top */
+    border-top: 1px solid #ffd857;
+    border-bottom: 1px solid #ffd857;
+    color: #fff; /* White text */
+    padding: 20px 20px; /* Padding around the footer */
+    font-family:Georgia, 'Times New Roman', Times, serif; /* Set font */
+}
+
+.footer div {
+    width: 20%; /* Set equal width for each section */
+}
+
+.footer h3 {
+    font-size: 18px; /* Section title size */
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffd857; /* Highlight color for headings */
+}
+
+.footer p {
+    margin: 5px 0; /* Spacing between paragraphs */
+    font-size: 20px; /* Paragraph font size */
+}
+.footer .company, 
+.footer .explore, 
+.footer .contact {
+    border-right: 1px solid #ffd857; /* Right border for visual separation */
+    padding: 15px;
+}
+.footer.footer .contact{
+    width: 25%;
+}
+.footer .newsletter {
+    padding: 15px;
+}
+
+.footer p:hover {
+    color: #ffd857; /* Change text color on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.footer input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.footer input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ffd857;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.footer input[type="submit"]:hover {
+    background-color: #e67e22;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer div {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Add spacing between sections */
+        text-align: center;
+    }
+
+    .footer .newsletter input[type="email"], 
+    .footer .newsletter input[type="submit"] {
+        width: 100%; /* Full width inputs on smaller screens */
+    }
+}
+
+
+.social-media {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-media a {
+    margin: 0 15px;
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ffd857; /* Change this color based on brand */
+}
+.subscribe-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dab745;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn i {
+    color: #fff; /* Arrow icon color - fill color set to white */
+    background-color: #dab745; /* Background color of the arrow */
+    padding: 5px; /* Padding around the arrow for visibility */
+    border-radius: 3px;
+}
+.subscribe-btn:hover {
+    background-color: #ffd857; /* Change background on hover */
+}
+.subscribe-btn i:hover{
+    background-color: #ffd857;
+}
+.sub-footer p{
+    text-align: center;
+    padding: 10px;
+    background-color: #eaeaea;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
