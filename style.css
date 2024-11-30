@@ -699,11 +699,11 @@ label{
     display: flex;
     position: absolute;
     background: none;
-    font-size: 90px;
+    font-size: 80px;
     max-width: 320px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
-    margin-left: 470px;
+    margin-left: 500px;
     margin-top: 80px;
     line-height: 100px;
     margin-bottom: 10px;
