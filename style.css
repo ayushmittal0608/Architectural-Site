@@ -1054,7 +1054,7 @@ label{
     opacity: 1;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     * {
     box-sizing: border-box;
     padding: 0;
@@ -1451,7 +1451,7 @@ label{
 .arrow span:nth-child(3){
     animation-delay: -.4s;
 }
-    .demo-text .both-image{
+.demo-text .both-image{
     display: flex;
     justify-content: flex-start;
     position: relative;
@@ -1936,4 +1936,172 @@ label{
     margin-bottom: 15px;
 }
 
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-top: 1px solid #ffd857;
+    border-bottom: 1px solid #ffd857;
+    color: #fff;
+    padding: 20px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer div {
+    width: 20%;
+}
+
+.footer h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffd857;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.footer .company,
+.footer .explore,
+.footer .contact {
+    border-right: 1px solid #ffd857;
+    padding: 15px;
+}
+
+.footer.footer .contact {
+    width: 25%;
+}
+
+.footer .newsletter {
+    padding: 15px;
+}
+
+.footer p:hover {
+    color: #ffd857;
+    cursor: pointer;
+}
+
+.footer input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.footer input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ffd857;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.footer input[type="submit"]:hover {
+    background-color: #e67e22;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer div {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer .newsletter input[type="email"],
+    .footer .newsletter input[type="submit"] {
+        width: 100%;
+    }
+}
+
+.subscribe-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dab745;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn i {
+    color: #fff; /* Arrow icon color - fill color set to white */
+    background-color: #dab745; /* Background color of the arrow */
+    padding: 5px; /* Padding around the arrow for visibility */
+    border-radius: 3px;
+}
+.subscribe-btn:hover {
+    background-color: #ffd857; /* Change background on hover */
+}
+.subscribe-btn i:hover{
+    background-color: #ffd857;
+}
+
+.social-media {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-media a {
+    color: #ffd857;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #ffffff;
+}
+.sub-footer p{
+    text-align: center;
+    padding: 10px;
+    background-color: #eaeaea;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.arrow-up{
+    position:absolute;
+    top: 477%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    background: transparent;
+}
+.arrow-up span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-top: 2px solid #ffd857;
+    opacity: 0.1;
+    border-left: 2px solid #dab745;
+    transform: rotate(45deg);
+    margin: 10px;
+    animation: scroll 2s infinite;
+}
+.arrow-up span:nth-child(2){
+    animation-delay: -.2s;
+}
+.arrow-up span:nth-child(3){
+    animation-delay: -.4s;
+}
+.arrow-up span:hover{
+    opacity: 1;
+}
 }
