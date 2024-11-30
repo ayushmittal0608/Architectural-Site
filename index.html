@@ -161,9 +161,7 @@
         <div class="newsletter">
             <h3>NEWSLETTER</h3><br>
             <p>Want to stay up to date?</p><br>
-            <button class="subscribe-btn">
-                Subscribe <i class="fa fa-arrow-right"></i>
-            </button>
+            <button class="subscribe-btn" id="subscribeBtn">Subscribe</button>
         </div>
     </section>
     <section class="sub-footer">
@@ -242,6 +240,107 @@
             }, 500); // Match this timing with the CSS transition duration
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.5/dist/sweetalert2.all.min.js"></script>
 
+    <script>
+        // Function to dynamically create and style the Subscribe button
+        function createSubscribeButton() {
+            // Create the button element
+            const subscribeBtn = document.getElementById('subscribeBtn');
+            
+            // Add text to the button
+            
+            // Append the button to the container
+            
+
+            // Add a click event listener to trigger the SweetAlert2 email input popup
+            subscribeBtn.addEventListener('click', async () => {
+                const { value: email } = await Swal.fire({
+                    title: 'Subscribe to our Newsletter',
+                    input: 'email',
+                    inputPlaceholder: 'Subscribe',
+                    confirmButtonText: 'Subscribe',
+                    showCloseButton: true,
+                    background: '#ffffff', // Set background color for SweetAlert2 modal
+                    customClass: {
+                        popup: 'swal-popup-custom', // Add custom class to popup for additional styling
+                        title: 'swal-title-custom', // Custom title class
+                        input: 'swal-input-custom', // Custom input class
+                    }
+                });
+
+                // Show confirmation popup if email is entered
+                if (email) {
+                    Swal.fire(`You have successfully subscribed with: ${email}`);
+                }
+            });
+        }
+
+        // Call the function to create the button after the page loads
+        window.onload = function() {
+            createSubscribeButton();
+        };
+    </script>
+
+    <style>
+        /* Custom SweetAlert2 Styles */
+        .swal-popup-custom {
+            border-radius: 0px !important;
+            padding: 30px !important;
+            background-color: white;
+        }
+
+        .swal-title-custom {
+            color: #333 !important;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        .swal-input-custom {
+            border-radius: 0px #c3b33b !important;
+            padding: 12px;
+            font-size: 16px;
+            width: 95% !important;
+            margin: 10px 0;
+            margin-left: 10px;
+        }
+
+        .swal2-input-custom:focus {
+            border-color: orange !important; /* Change to orange when focused */
+            outline: none; /* Remove the default outline */
+        }
+
+        .swal2-confirm {
+            background-color: #c3b33b !important; /* Green background for confirm button */
+            color: white !important; /* White text */
+            padding: 12px 25px !important; /* Add padding for the button */
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 0px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Confirm button hover effect */
+        .swal2-confirm:hover {
+            background-color: #d2c745 !important; /* Darker green on hover */
+        }
+
+        /* Confirm button active effect */
+        .swal2-confirm:active {
+            transform: scale(0.98);
+        }
+        .swal2-popup {
+            padding: 20px !important;
+            background-color: white !important;
+        }
+        .swal2-close {
+            color: #888 !important; /* Light gray color for the close button */
+            font-size: 24px !important; /* Size of the X */
+            font-weight: bold;
+            top: 10px !important;
+            right: 10px !important;
+        }
+    </style>
 </body>
 </html>
