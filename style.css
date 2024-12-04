@@ -1277,7 +1277,7 @@ img {
     opacity: 0.2;
     width: 100px;
     height: 300px;
-    left: 100%;
+    left: 150%;
     display: flex;
     position: absolute;
     z-index: 0;
