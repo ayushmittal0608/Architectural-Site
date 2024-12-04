@@ -1233,7 +1233,7 @@ img {
 }
 .slider {
     display: flex;
-    left: 30%;
+    left: 50%;
     overflow: hidden;
     position:relative;
     border-radius: 4px;
@@ -1242,7 +1242,7 @@ img {
     line-height: 0;
   }
   .controls {
-    left: 65%;
+    left: 70%;
     z-index: 5;
     text-align: center;
   }
