@@ -1067,11 +1067,11 @@ label{
         padding-top: 10px;
     }
     .sub-footer{
-        width: 120%;
+        width: 600px;
     }
     .footer {
         display: block;
-        width: 120%;
+        width: 600px;
         justify-content: space-around;
         align-items: center;
         border-top: 1px solid #ffd857;
