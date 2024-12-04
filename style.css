@@ -1075,6 +1075,7 @@ label{
         margin: 20px 0 20px; /* Combined margin for better spacing */
     }
     .footer {
+        margin-top: 100px;
         flex-direction: column;
         align-items: center;
     }
@@ -1232,7 +1233,7 @@ img {
 }
 .slider {
     display: flex;
-    left: 25%;
+    left: 30%;
     overflow: hidden;
     position:relative;
     border-radius: 4px;
@@ -1241,13 +1242,17 @@ img {
     line-height: 0;
   }
   .controls {
-    left: 60%;
+    left: 65%;
     z-index: 5;
     text-align: center;
   }
+  .wrapper{
+    position: relative;
+    top:20%;
+  }
   .wrapper  h2{
-    display:contents;
-    position: absolute;
+    right: 5%;
+    top: 70%;
     background: none;
     font-size: 40px;
     max-width: 320px;
@@ -1260,7 +1265,7 @@ img {
   }
   .wrapper p{
     font-size: 25px;
-    left: 220px;
+    left: 300px;
     margin-top: 300px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:#fff;
@@ -1272,7 +1277,7 @@ img {
     opacity: 0.2;
     width: 100px;
     height: 300px;
-    left: 91%;
+    left: 100%;
     display: flex;
     position: absolute;
     z-index: 0;
