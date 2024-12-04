@@ -1066,6 +1066,20 @@ label{
         height: 165px;
         padding-top: 10px;
     }
+    .sub-footer{
+        width: 120%;
+    }
+    .footer {
+        display: block;
+        width: 120%;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 1px solid #ffd857;
+        border-bottom: 1px solid #ffd857;
+        color: #fff;
+        padding: 20px 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
     span {
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 12px;
@@ -1354,6 +1368,7 @@ img {
     width: 40%;
     height: 40%;
 }
+
 img {
     height: 40px;
     width: 220px;
