@@ -1253,6 +1253,7 @@ img {
   .wrapper  h2{
     right: 5%;
     top: 70%;
+    display: none;
     background: none;
     font-size: 40px;
     max-width: 320px;
@@ -1265,6 +1266,7 @@ img {
   }
   .wrapper p{
     font-size: 25px;
+    display: none;
     left: 300px;
     margin-top: 300px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
