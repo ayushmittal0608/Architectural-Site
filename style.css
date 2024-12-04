@@ -400,6 +400,7 @@ label{
 .arrow span:nth-child(3){
     animation-delay: -.4s;
 }
+
 .demo-text .both-image{
     display: flex;
     justify-content: flex-start;
@@ -1035,12 +1036,13 @@ label{
     opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 786px) {
     *{
         box-sizing: border-box;
         padding: 0;
         margin: 0;
         background: #000;
+        text-align: center;
     }
     .container {
         width: 100%;
@@ -1053,7 +1055,224 @@ label{
         color: #ffd857;
         display: inline-block;
         line-height: 1.2;
-        margin: 50px 0 20px; /* Combined margin for better spacing */
+        margin: 20px 0 20px; /* Combined margin for better spacing */
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer div {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer .newsletter input[type="email"],
+    .footer .newsletter input[type="submit"] {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .company,
+.footer .explore,
+.footer .contact {
+    border: none;
+    padding: 1px;
+}
+.demo-text .both-image .img{
+    width: 50%;
+    position: relative;
+    display: none;
+}
+.demo-text .both-image2 .img2{
+    display: none;
+}
+.demo-text .both-image .container-profile{
+    width: 42vw;
+}
+.demo-text .both-image .container-profile .img{
+    width: 40%;
+    height: 40%;
+}
+img {
+    height: 40px;
+    width: 220px;
+    stroke: white;
+    fill-opacity: 0;
+    stroke-width: 3px;
+    stroke-dasharray: 4500;
+    animation: draw 8s ease;
+  }
+  .demo-text .both-image .container-profile .text-profile h3 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set to a professional sans-serif font */
+    font-weight: 200; /* Bold weight for emphasis */
+    font-size: 2rem; /* Adjust size to suit the design */
+    line-height: 1.2; /* Set line-height for readability */
+    color: #dab745; /* Use a golden color for the heading */
+    text-transform: capitalize; /* Capitalize all text */
+    letter-spacing: 1px; /* Add spacing between letters */
+    margin-top: 180px; /* Space between heading and content */
+    position: relative; /* For pseudo-elements */
+}
+.demo-text .both-image .container-profile .text-profile p{
+    color:#e4e3e3;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.demo-text .both-image2 .container-profile2 h2{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin-right: 20px;
+    margin-top: 40px;
+    line-height: 145px;
+    margin-bottom: 10px;
+    color: #dab745; /* Ensure it contrasts with the background */
+    opacity: 1; /* Ensure full opacity */
+    z-index: 10; /* Ensure it's placed above other elements */
+}
+.demo-text .both-image2 .container-profile2 h4{
+    position: absolute;
+    top: 37%;
+    left: 2%;
+    right: 50%;
+    color: #ffffff;
+    font-weight: lighter;
+    text-decoration:underline;
+    opacity: 1;
+    background-color: transparent;
+    font-size: 20px;
+    text-decoration: dashed;
+    text-decoration-thickness: 3px;
+    font-family: "Lora", serif;
+    z-index: 10;
+    text-align:left;
+    text-underline-offset: 3px; 
+}
+.demo-text .both-image2 .container-profile2 p{
+    position: absolute;
+    top: 30%;
+    left: 2%;   
+    color: #dab745;
+    font-weight: lighter;
+    text-decoration:underline;
+    opacity: 1;
+    background-color: transparent;
+    font-size: 15px;
+    text-decoration: dashed;
+    text-decoration-thickness: 3px;
+    font-family: "Lora", serif;
+    z-index: 10;
+    text-align:left;
+    text-underline-offset: 3px; 
+}
+.demo-text .both-image2 .container-profile2 .para p{
+    position: absolute;
+    top: 65%;
+    left: 1%;
+    right: 45%;
+    color: #e4e3e3;
+    font-weight: lighter;
+    text-decoration:underline;
+    opacity: 1;
+    background-color: transparent;
+    font-size: 15px;
+    text-decoration: dashed;
+    text-decoration-thickness: 3px;
+    font-family:Arial, Helvetica, sans-serif;
+    z-index: 10;
+    text-align:left;
+    text-underline-offset: 3px; 
+}
+.demo-text .container-profile2 {
+    display: flex;
+    justify-content: left; /* Align items to the left */
+    width: 86vw; /* Full width of the viewport */
+    height: 81vh; /* Full height of the viewport */
+    background: black; /* Semi-transparent white */
+    border-radius: 0; /* No rounded corners for full screen */
+    
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Frosted glass effect for Safari */
+
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2)
+                15px 15px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border: 1px solid #0a0a0a;
+}
+.slider {
+    display: flex;
+    left: 20%;
+    overflow: hidden;
+    position:relative;
+    border-radius: 4px;
+    max-width: 10rem;
+    height: 10rem;
+    line-height: 0;
+  }
+  .controls {
+    left: 55%;
+    z-index: 5;
+    text-align: center;
+  }
+  .wrapper  h2{
+    display:contents;
+    position: absolute;
+    background: none;
+    font-size: 40px;
+    max-width: 320px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    line-height: 100px;
+    color: #dab745;
+    opacity: 1;
+    z-index: 10;
+  }
+  .wrapper p{
+    font-size: 25px;
+    left: 220px;
+    margin-top: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#fff;
+    position: absolute;
+    z-index:10;
+  }
+  .back-image{
+    opacity: 0.2;
+    width: 100px;
+    height: 300px;
+    left: 81%;
+    display: flex;
+    position: absolute;
+    z-index: 0;
+  }
+  .footer .newsletter .subscribe-btn{
+    display:flex;
+    position: relative;
+    margin-left:140px;
+  }
+}
+@media (min-width: 786px) and (max-width: 1024px) {
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        background: #000;
+        text-align: center;
+    }
+    .container {
+        width: 100%;
+        margin: auto;
+        z-index: 1;
+    }
+    span {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 12px;
+        color: #ffd857;
+        display: inline-block;
+        line-height: 1.2;
+        margin: 20px 0 20px; /* Combined margin for better spacing */
     }
     .footer {
         flex-direction: column;
@@ -1070,4 +1289,181 @@ label{
     .footer .newsletter input[type="submit"] {
         width: 100%;
     }
+    .footer .company,
+.footer .explore,
+.footer .contact {
+    border: none;
+    padding: 1px;
+}
+.demo-text .both-image .img{
+    width: 50%;
+    position: relative;
+    display: none;
+}
+.demo-text .both-image2 .img2{
+    display: none;
+}
+.demo-text .both-image .container-profile{
+    width: 42vw;
+}
+.demo-text .both-image .container-profile .img{
+    width: 40%;
+    height: 40%;
+}
+img {
+    height: 40px;
+    width: 220px;
+    stroke: white;
+    fill-opacity: 0;
+    stroke-width: 3px;
+    stroke-dasharray: 4500;
+    animation: draw 8s ease;
+  }
+  .demo-text .both-image .container-profile .text-profile h3 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set to a professional sans-serif font */
+    font-weight: 200; /* Bold weight for emphasis */
+    font-size: 2rem; /* Adjust size to suit the design */
+    line-height: 1.2; /* Set line-height for readability */
+    color: #dab745; /* Use a golden color for the heading */
+    text-transform: capitalize; /* Capitalize all text */
+    letter-spacing: 1px; /* Add spacing between letters */
+    margin-top: 180px; /* Space between heading and content */
+    position: relative; /* For pseudo-elements */
+}
+.demo-text .both-image .container-profile .text-profile p{
+    color:#e4e3e3;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.demo-text .both-image2 .container-profile2 h2{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin-right: 20px;
+    margin-top: 40px;
+    line-height: 145px;
+    margin-bottom: 10px;
+    color: #dab745; /* Ensure it contrasts with the background */
+    opacity: 1; /* Ensure full opacity */
+    z-index: 10; /* Ensure it's placed above other elements */
+}
+.demo-text .both-image2 .container-profile2 h4{
+    position: absolute;
+    top: 37%;
+    left: 2%;
+    right: 50%;
+    color: #ffffff;
+    font-weight: lighter;
+    text-decoration:underline;
+    opacity: 1;
+    background-color: transparent;
+    font-size: 20px;
+    text-decoration: dashed;
+    text-decoration-thickness: 3px;
+    font-family: "Lora", serif;
+    z-index: 10;
+    text-align:left;
+    text-underline-offset: 3px; 
+}
+.demo-text .both-image2 .container-profile2 p{
+    position: absolute;
+    top: 30%;
+    left: 2%;   
+    color: #dab745;
+    font-weight: lighter;
+    text-decoration:underline;
+    opacity: 1;
+    background-color: transparent;
+    font-size: 15px;
+    text-decoration: dashed;
+    text-decoration-thickness: 3px;
+    font-family: "Lora", serif;
+    z-index: 10;
+    text-align:left;
+    text-underline-offset: 3px; 
+}
+.demo-text .both-image2 .container-profile2 .para p{
+    position: absolute;
+    top: 65%;
+    left: 1%;
+    right: 45%;
+    color: #e4e3e3;
+    font-weight: lighter;
+    text-decoration:underline;
+    opacity: 1;
+    background-color: transparent;
+    font-size: 15px;
+    text-decoration: dashed;
+    text-decoration-thickness: 3px;
+    font-family:Arial, Helvetica, sans-serif;
+    z-index: 10;
+    text-align:left;
+    text-underline-offset: 3px; 
+}
+.demo-text .container-profile2 {
+    display: flex;
+    justify-content: left; /* Align items to the left */
+    width: 86vw; /* Full width of the viewport */
+    height: 81vh; /* Full height of the viewport */
+    background: black; /* Semi-transparent white */
+    border-radius: 0; /* No rounded corners for full screen */
+    
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Frosted glass effect for Safari */
+
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2)
+                15px 15px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border: 1px solid #0a0a0a;
+}
+.slider {
+    display: flex;
+    left: 20%;
+    overflow: hidden;
+    position:relative;
+    border-radius: 4px;
+    max-width: 10rem;
+    height: 10rem;
+    line-height: 0;
+  }
+  .controls {
+    left: 55%;
+    z-index: 5;
+    text-align: center;
+  }
+  .wrapper  h2{
+    display:contents;
+    position: absolute;
+    background: none;
+    font-size: 40px;
+    max-width: 320px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    line-height: 100px;
+    color: #dab745;
+    opacity: 1;
+    z-index: 10;
+  }
+  .wrapper p{
+    font-size: 25px;
+    left: 220px;
+    margin-top: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#fff;
+    position: absolute;
+    z-index:10;
+  }
+  .back-image{
+    opacity: 0.2;
+    width: 100px;
+    height: 300px;
+    left: 81%;
+    display: flex;
+    position: absolute;
+    z-index: 0;
+  }
+  .footer .newsletter .subscribe-btn{
+    display:block;
+    position: relative;
+    margin-left:500px;
+  }
 }
