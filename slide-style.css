@@ -281,11 +281,305 @@ b{
     color: #ffffff;
     font-size: 13px;
     text-decoration: none;
-    border-radius: 50%;
+    border-radius: 30%;
     padding: 5px;
     border: 1px solid #dab745;
 }
 
 .social-media a:hover {
     color: #dab745;
+}
+
+@media (max-width: 768px){
+    /* slide-style.css */
+
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Set up the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    z-index: 1;
+}
+
+span {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    color: #ffd857;
+    display: inline-block;
+    line-height: 1.2;
+    margin: 25px 0 10px; /* Combined margin for better spacing */
+}
+
+.main-head {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    z-index: 100;
+    height: 100px;
+    padding-top: 5px;
+}
+
+.main-menu {
+    width: 100%;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.main-menu .container{
+    height: 60px;
+}
+.main-menu .logo img {
+    width: 35px;
+    height: auto;
+    max-height: 30px;
+    margin-top: 100px;
+}
+
+.main-head.slidedown {
+    position: fixed;
+    background: black;
+    height: 110px;
+    opacity: 0.6;
+    padding-top: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: slidedown 0.3s forwards;
+}
+.main-head.slidedown .logo {
+    transform: translateX(0); /* Shift left during slide down */
+    transition: transform 0.3s ease; /* Smooth transition for movement */
+    display: flex; /* Ensure flexbox is enabled when slidedown */
+    align-items: center; /* Vertically center items */
+    justify-content: start; /* Center items horizontally */
+    flex-direction: row;
+}
+
+.main-head .logo {
+    transform: translateX(0); /* Reset position when not sliding down */
+    display: flex;
+}
+.main-menu .logo img {
+    width: 45px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 50px; /* Set a maximum height */
+    
+}
+
+/* Styling for the span text */
+.main-menu .logo span {
+    text-align: left; /* Align text to the left */
+    /* Additional styling can be added here */
+    
+}
+.main-head.slidedown .logo img {
+    margin-top: 30px; /* Reset any added margin for slidedown */
+}
+.main-head.slidedown .logo span {
+    margin-top: 45px; /* Reset any added margin for slidedown */
+}
+@keyframes slidedown {
+    from {
+        top: -250px;
+    }
+    to {
+        top: 0;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+.loading-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: #191654;
+    z-index: 3;
+  }
+  .loading-page .logo{
+    width: 75px;
+    max-height: 60px;
+    height: auto;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    transform: translateX(100%);
+    gap: 10px;
+    flex-direction: column;
+    animation: zoom 1s ease forward;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;
+  }
+  
+  #img {
+    height: 150px;
+    width: 150px;
+    stroke: white;
+    fill-opacity: 0;
+    stroke-width: 3px;
+    stroke-dasharray: 4500;
+    animation: draw 8s ease;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dashoffset: 4500;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+@keyframes zoom{
+    from{
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(2);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+}
+.main-menu .logo {
+    width: 30%;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    transform: translateX(100%);
+    gap: 10px;
+    flex-direction: column;
+    animation: zoom 1s ease forward;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;
+}
+.main-menu .logo span {
+    margin-top: 5px; /* Space between image and text */
+    text-align: center; /* Center text */
+}
+.main-menu .nav-menu {
+    width: auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0; /* Ensure padding is reset */
+}
+
+.nav-list-item {
+    padding: 5px 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: color 0.1s ease;
+}
+
+.nav-link:hover {
+    color: #B53471;
+}
+
+.main-head.slidedown .nav-link {
+    color: #ffffff;
+}
+
+/* Style the menu container */
+.menus {
+    width: 100px; /* Width of the menu */
+    background-color: #000000; /* Background color */
+    display: flex;
+}
+
+/* Style for the menu items */
+.menus ul {
+    color: #dab745; /* Text color */
+    font-size: 20px;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+.menus a{
+    color: #dab745; /* Text color */
+    text-decoration: none;
+}
+.menus a:hover{
+    color: #fff; /* Text color */
+    text-decoration: none;
+}
+/* Adjust the structure to display items vertically */
+.menus li {
+    display: block; /* Show items as block */
+    padding-bottom: 10px;
+}
+.menus li:hover{
+    color:#fff;
+}
+.contact{
+    position: absolute;
+    color: white;
+    margin-top: 40%;
+    margin-left: 250px;
+}
+h3{
+    color:#dab745;
+}
+p{
+    color: #ffffff;;
+    font-size: 13px;
+}
+
+b{
+    color: #fff;
+    font-size: 15px;
+}
+
+.social-media {
+    text-align: left;
+}
+
+.social-media a {
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 30%;
+    padding: 5px;
+    border: 1px solid #dab745;
+}
+
+.social-media a:hover {
+    color: #dab745;
+}
 }
