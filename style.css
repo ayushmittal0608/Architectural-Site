@@ -118,6 +118,11 @@ span {
     /* Additional styling can be added here */
     
 }
+
+.main-head.slidedown .slidelink{
+    margin-top: 0px;
+}
+
 .main-head.slidedown .logo img {
     margin-top: 30px; /* Reset any added margin for slidedown */
 }
