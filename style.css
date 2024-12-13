@@ -52,7 +52,7 @@ html, body {
   /* Floating Icons Styling */
   .floating-icons {
     position: fixed;
-    bottom: 200px;
+    bottom: 150px;
     left: 20px;
     display: flex;
     flex-direction: column;
