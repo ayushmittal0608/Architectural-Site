@@ -37,17 +37,11 @@ html, body {
     box-sizing: border-box; /* Include padding and borders in the element's total width and height */
 }
 
-.container {
+.container1 {
     max-width: 1280px;
     width: 100%;
     margin: auto;
     z-index: 1;
-}
-
-@media (min-width: 1200px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 1280px;
-    }
 }
 
 span {
