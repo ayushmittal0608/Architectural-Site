@@ -70,7 +70,6 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
 }
 .main-menu .container{
     height: 120px;
@@ -1152,7 +1151,7 @@ label{
         position: relative;
         overflow: hidden;
     }
-    .container {
+    .container1 {
         width: 100%;
         margin: auto;
         z-index: 1;
@@ -1505,7 +1504,7 @@ img {
         background: #000;
         text-align: center;
     }
-    .container {
+    .container1 {
         width: 100%;
         margin: auto;
         z-index: 1;
