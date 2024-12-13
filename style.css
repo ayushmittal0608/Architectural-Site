@@ -44,6 +44,48 @@ html, body {
     z-index: 1;
 }
 
+.content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Floating Icons Styling */
+  .floating-icons {
+    position: fixed;
+    bottom: 250px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between icons */
+    background-color: #00000000;
+    z-index: 1000000000000;
+  }
+  
+  .floating-icons .icon {
+    display: block;
+    width: 50px; /* Adjust icon size */
+    height: 50px;
+    background-color: #000000;
+    border-radius: 50%; /* Circular shape */
+    box-shadow: 0 4px 12px rgba(212, 173, 75, 0.5), inset 0 0 8px rgba(255, 241, 86, 0.4);
+    text-align: center;
+    line-height: 50px; /* Center icon inside the circle */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .floating-icons .icon:hover {
+    transform: scale(1.2); /* Icon grows slightly on hover */
+  }
+  
+  .floating-icons i {
+    font-size: 20px; /* Icon size */
+    color: #dab745; /* Facebook color by default */
+    text-align: center;
+    padding: 2px;
+  }
+  
+
+
 span {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 22px;
