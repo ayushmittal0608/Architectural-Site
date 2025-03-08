@@ -22,7 +22,7 @@ body {
 span {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 22px;
-    color: #ffd857;
+    color: #a19871;
     display: inline-block;
     line-height: 1.2;
     margin: 50px 0 20px; /* Combined margin for better spacing */
@@ -229,17 +229,18 @@ span {
     width: 250px; /* Width of the menu */
     background-color: #000000; /* Background color */
     display: flex;
+    margin-left: 220px;
 }
 
 /* Style for the menu items */
 .menus ul {
-    color: #dab745; /* Text color */
+    color: #a19871; /* Text color */
     font-size: 30px;
-    margin-top: 200px;
-    margin-left: 300px;
+    margin-top: 220px;
+    margin-left: 100px;
 }
 .menus a{
-    color: #dab745; /* Text color */
+    color: #a19871; /* Text color */
     text-decoration: none;
 }
 .menus a:hover{
@@ -258,10 +259,10 @@ span {
     position: absolute;
     color: white;
     margin-top: 15%;
-    margin-left: 800px;
+    margin-left: 600px;
 }
 h3{
-    color:#dab745;
+    color:#a19871;
 }
 p{
     color: #ffffff;;
@@ -283,11 +284,11 @@ b{
     text-decoration: none;
     border-radius: 30%;
     padding: 5px;
-    border: 1px solid #dab745;
+    border: 1px solid #a19871;
 }
 
 .social-media a:hover {
-    color: #dab745;
+    color: #a19871;
 }
 
 @media (max-width: 768px){
@@ -526,13 +527,13 @@ span {
 
 /* Style for the menu items */
 .menus ul {
-    color: #dab745; /* Text color */
+    color: #a19871; /* Text color */
     font-size: 20px;
     margin-top: 200px;
     margin-left: 50px;
 }
 .menus a{
-    color: #dab745; /* Text color */
+    color: #a19871; /* Text color */
     text-decoration: none;
 }
 .menus a:hover{
@@ -554,7 +555,7 @@ span {
     margin-left: 250px;
 }
 h3{
-    color:#dab745;
+    color:#a19871;
 }
 p{
     color: #ffffff;;
@@ -576,10 +577,10 @@ b{
     text-decoration: none;
     border-radius: 30%;
     padding: 5px;
-    border: 1px solid #dab745;
+    border: 1px solid #a19871;
 }
 
 .social-media a:hover {
-    color: #dab745;
+    color: #a19871;
 }
 }

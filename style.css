@@ -8,7 +8,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background: #000;
+    background: #000000;
 }
 ::-webkit-scrollbar {
     width: 8px; /* Width of the scrollbar */
@@ -21,12 +21,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #dab745; /* Scrollbar handle color */
+    background: #a19871; /* Scrollbar handle color */
      /* Rounded thumb corners */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #ffd857; /* Scrollbar handle color on hover */
+    background: #a19871; /* Scrollbar handle color on hover */
 }
 
 html, body {
@@ -79,7 +79,7 @@ html, body {
   
   .floating-icons i {
     font-size: 20px; /* Icon size */
-    color: #dab745; /* Facebook color by default */
+    color: #a19871; /* Facebook color by default */
     text-align: center;
     padding: 2px;
   }
@@ -89,7 +89,7 @@ html, body {
 span {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 22px;
-    color: #ffd857;
+    color: #a19871;
     display: inline-block;
     line-height: 1.2;
     margin: 50px 0 20px; /* Combined margin for better spacing */
@@ -268,7 +268,7 @@ span {
 .team h2{
     margin-top: 5%;
     text-align: center;
-    color:#dab745;
+    color:#a19871;
     font-size: 45px;
     font-weight: 600;
     line-height: 55px;
@@ -307,7 +307,7 @@ span {
   .team .container .row .overlay h5{
     font-size: 24px; /* Set the font size */
     font-weight: bold; /* Make the title bold */
-    color:#dab745; /* Set the title color */
+    color:#a19871; /* Set the title color */
     text-align: center; /* Center align the title */
     text-transform: uppercase; /* Capitalize the text */
     letter-spacing: 2px; /* Add space between letters */
@@ -370,7 +370,7 @@ span {
 .toggle-btn {
     background-color: transparent;
     margin-top: 15px;
-    color: #dab745;
+    color: #a19871;
     border: none;
     padding: 15px;
     cursor: pointer;
@@ -391,7 +391,7 @@ label{
    }
    
    label span{
-     background: #dab745;
+     background: #a19871;
      border-radius:10px;
      height:1px;
      margin: 7px 0;
@@ -423,7 +423,7 @@ label{
    
 .toggle-btn:hover {
     background-color: transparent;
-    color:#ffd857;
+    color:#a19871;
     opacity: 1;
 }
 
@@ -512,9 +512,9 @@ label{
     width: 30px;
     height: 30px;
     background: transparent;
-    border-bottom: 2px solid #ffd857;
+    border-bottom: 2px solid #a19871;
     opacity: 0.1;
-    border-right: 2px solid #dab745;
+    border-right: 2px solid #a19871;
     transform: rotate(45deg);
     margin: 10px;
     animation: scroll 2s infinite;
@@ -548,9 +548,7 @@ label{
     box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2)
                 15px 15px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
     border: 1px solid #0a0a0a;
-    animation: appear 2s linear;
-    animation-timeline: view();
-    animation-range: entry 30% cover 40%;
+    
 }
 .demo-text .both-image .img{
     width: 50%;
@@ -570,7 +568,7 @@ label{
     font-weight: 200; /* Bold weight for emphasis */
     font-size: 2rem; /* Adjust size to suit the design */
     line-height: 1.2; /* Set line-height for readability */
-    color: #dab745; /* Use a golden color for the heading */
+    color: #a19871; /* Use a golden color for the heading */
     text-transform: capitalize; /* Capitalize all text */
     letter-spacing: 1px; /* Add spacing between letters */
     margin-top: 180px; /* Space between heading and content */
@@ -652,7 +650,7 @@ label{
     top: 15%;
     left: 5%;
     transform: translate(-50%, -50%);
-    color: #dab745;
+    color: #a19871;
     font-weight: lighter;
     background-color: transparent;
     text-decoration:none;
@@ -671,7 +669,7 @@ label{
     top: 40%;
     left: 10%;
     right: 20%;
-    color: #dab745;
+    color: #a19871;
     font-weight: lighter;
     text-decoration:underline;
     opacity: 1;
@@ -731,9 +729,6 @@ label{
     box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2)
                 15px 15px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
     border: 1px solid #0a0a0a;
-    animation: appear2 5s linear;
-    animation-timeline: view();
-    animation-range: entry 30% cover 40%;
 }
 
 .profile-img2 {
@@ -756,7 +751,7 @@ label{
     top: 40%;
     left: 10%;
     right: 20%;
-    color: #dab745;
+    color: #a19871;
     font-weight: lighter;
     text-decoration:underline;
     opacity: 1;
@@ -777,7 +772,7 @@ label{
     margin-top: 40px;
     line-height: 145px;
     margin-bottom: 10px;
-    color: #dab745; /* Ensure it contrasts with the background */
+    color: #a19871; /* Ensure it contrasts with the background */
     opacity: 1; /* Ensure full opacity */
     z-index: 10; /* Ensure it's placed above other elements */
 }
@@ -803,7 +798,7 @@ label{
     position: absolute;
     top: 30%;
     left: 4%;   
-    color: #dab745;
+    color: #a19871;
     font-weight: lighter;
     text-decoration:underline;
     opacity: 1;
@@ -838,14 +833,14 @@ label{
     margin-top: 80px;
     line-height: 100px;
     margin-bottom: 10px;
-    color: #dab745; /* Ensure it contrasts with the background */
+    color: #a19871; /* Ensure it contrasts with the background */
     opacity: 1; /* Ensure full opacity */
     z-index: 10; /* Ensure it's placed above other elements */
   }
   .wrapper p{
     font-size: 25px;
-    left: 600px;
-    margin-top: 200px;
+    left: 540px;
+    margin-top: 180px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:#fff;
     position: absolute;
@@ -1024,8 +1019,8 @@ label{
     align-items: flex-start;
     background-color: black;
     color:rgb(255, 255, 255);
-    border-top: 1px solid #ffd857;
-    border-bottom: 1px solid #ffd857;
+    border-top: 1px solid #a19871;
+    border-bottom: 1px solid #a19871;
     padding: 20px 20px;
     margin-top: 15%;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -1039,7 +1034,7 @@ label{
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
-    color: #ffd857;
+    color: #a19871;
 }
 
 .footer p {
@@ -1050,7 +1045,7 @@ label{
 .footer .company,
 .footer .explore,
 .footer .contact {
-    border-right: 1px solid #ffd857;
+    border-right: 1px solid #a19871;
     padding: 15px;
 }
 
@@ -1063,7 +1058,7 @@ label{
 }
 
 .footer p:hover {
-    color: #ffd857;
+    color: #a19871;
     cursor: pointer;
 }
 
@@ -1077,7 +1072,7 @@ label{
 
 .footer input[type="submit"] {
     padding: 10px 20px;
-    background-color: #ffd857;
+    background-color: #a19871;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -1093,7 +1088,7 @@ label{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #dab745;
+    background-color: #a19871;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -1108,15 +1103,15 @@ label{
 
 .subscribe-btn i {
     color: #fff; /* Arrow icon color - fill color set to white */
-    background-color: #dab745; /* Background color of the arrow */
+    background-color: #a19871; /* Background color of the arrow */
     padding: 5px; /* Padding around the arrow for visibility */
     border-radius: 3px;
 }
 .subscribe-btn:hover {
-    background-color: #ffd857; /* Change background on hover */
+    background-color: #a19871; /* Change background on hover */
 }
 .subscribe-btn i:hover{
-    background-color: #ffd857;
+    background-color: #a19871;
 }
 
 .social-media {
@@ -1125,7 +1120,7 @@ label{
 }
 
 .social-media a {
-    color: #ffd857;
+    color: #a19871;
     margin: 0 10px;
     font-size: 18px;
     text-decoration: none;
@@ -1154,9 +1149,9 @@ label{
     width: 30px;
     height: 30px;
     background: transparent;
-    border-top: 2px solid #ffd857;
+    border-top: 2px solid #a19871;
     opacity: 0.1;
-    border-left: 2px solid #dab745;
+    border-left: 2px solid #a19871;
     transform: rotate(45deg);
     margin: 10px;
     animation: scroll 2s infinite;
@@ -1218,8 +1213,8 @@ label{
         width: 600px;
         justify-content: space-around;
         align-items: center;
-        border-top: 1px solid #ffd857;
-        border-bottom: 1px solid #ffd857;
+        border-top: 1px solid #a19871;
+        border-bottom: 1px solid #a19871;
         color: #fff;
         padding: 20px 20px;
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -1227,7 +1222,7 @@ label{
     span {
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 12px;
-        color: #ffd857;
+        color: #a19871;
         display: inline-block;
         line-height: 1.2;
         margin: 20px 0 20px; /* Combined margin for better spacing */
@@ -1298,7 +1293,7 @@ img {
     font-weight: 200; /* Bold weight for emphasis */
     font-size: 2rem; /* Adjust size to suit the design */
     line-height: 1.2; /* Set line-height for readability */
-    color: #dab745; /* Use a golden color for the heading */
+    color: #a19871; /* Use a golden color for the heading */
     text-transform: capitalize; /* Capitalize all text */
     letter-spacing: 1px; /* Add spacing between letters */
     margin-top: 180px; /* Space between heading and content */
@@ -1317,7 +1312,7 @@ img {
     margin-top: 40px;
     line-height: 145px;
     margin-bottom: 10px;
-    color: #dab745; /* Ensure it contrasts with the background */
+    color: #a19871; /* Ensure it contrasts with the background */
     opacity: 1; /* Ensure full opacity */
     z-index: 10; /* Ensure it's placed above other elements */
 }
@@ -1343,7 +1338,7 @@ img {
     position: absolute;
     top: 30%;
     left: 2%;   
-    color: #dab745;
+    color: #a19871;
     font-weight: lighter;
     text-decoration:underline;
     opacity: 1;
@@ -1418,7 +1413,7 @@ img {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
     line-height: 100px;
-    color: #dab745;
+    color: #a19871;
     opacity: 1;
     z-index: 10;
   }
@@ -1468,7 +1463,7 @@ img {
 .team h2{
     margin-top: 5%;
     text-align: center;
-    color:#dab745;
+    color:#a19871;
     font-size: 45px;
     font-weight: 600;
     line-height: 55px;
@@ -1507,7 +1502,7 @@ img {
   .team .container .row .overlay h5{
     font-size: 20px; /* Set the font size */
     font-weight: bold; /* Make the title bold */
-    color:#dab745; /* Set the title color */
+    color:#a19871; /* Set the title color */
     text-align: center; /* Center align the title */
     text-transform: uppercase; /* Capitalize the text */
     letter-spacing: 2px; /* Add space between letters */
@@ -1555,7 +1550,7 @@ img {
     span {
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 12px;
-        color: #ffd857;
+        color: #a19871;
         display: inline-block;
         line-height: 1.2;
         margin: 20px 0 20px; /* Combined margin for better spacing */
@@ -1618,7 +1613,7 @@ img {
     font-weight: 200; /* Bold weight for emphasis */
     font-size: 2rem; /* Adjust size to suit the design */
     line-height: 1.2; /* Set line-height for readability */
-    color: #dab745; /* Use a golden color for the heading */
+    color: #a19871; /* Use a golden color for the heading */
     text-transform: capitalize; /* Capitalize all text */
     letter-spacing: 1px; /* Add spacing between letters */
     margin-top: 180px; /* Space between heading and content */
@@ -1637,7 +1632,7 @@ img {
     margin-top: 40px;
     line-height: 145px;
     margin-bottom: 10px;
-    color: #dab745; /* Ensure it contrasts with the background */
+    color: #a19871; /* Ensure it contrasts with the background */
     opacity: 1; /* Ensure full opacity */
     z-index: 10; /* Ensure it's placed above other elements */
 }
@@ -1663,7 +1658,7 @@ img {
     position: absolute;
     top: 30%;
     left: 2%;   
-    color: #dab745;
+    color: #a19871;
     font-weight: lighter;
     text-decoration:underline;
     opacity: 1;
@@ -1733,7 +1728,7 @@ img {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
     line-height: 100px;
-    color: #dab745;
+    color: #a19871;
     opacity: 1;
     z-index: 10;
   }
@@ -1766,7 +1761,7 @@ img {
 .team h2{
     margin-top: 5%;
     text-align: center;
-    color:#dab745;
+    color:#a19871;
     font-size: 45px;
     font-weight: 600;
     line-height: 55px;
@@ -1805,7 +1800,7 @@ img {
   .team .container .row .overlay h5{
     font-size: 24px; /* Set the font size */
     font-weight: bold; /* Make the title bold */
-    color:#dab745; /* Set the title color */
+    color:#a19871; /* Set the title color */
     text-align: center; /* Center align the title */
     text-transform: uppercase; /* Capitalize the text */
     letter-spacing: 2px; /* Add space between letters */
