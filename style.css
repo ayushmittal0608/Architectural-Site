@@ -67,7 +67,7 @@ html, body {
     height: 50px;
     background-color: #000000;
     border-radius: 50%; /* Circular shape */
-    box-shadow: 0 4px 12px rgba(212, 173, 75, 0.5), inset 0 0 8px rgba(255, 241, 86, 0.4);
+    box-shadow: 0 4px 12px rgba(172, 150, 97, 0.5), inset 0 0 8px rgba(255, 241, 86, 0.4);
     text-align: center;
     line-height: 50px; /* Center icon inside the circle */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;

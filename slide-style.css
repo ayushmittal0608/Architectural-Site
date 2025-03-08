@@ -45,7 +45,8 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 8px;
+    padding-top: 25px;
 }
 .main-menu .container{
     height: 120px;
